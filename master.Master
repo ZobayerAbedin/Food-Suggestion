@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.Master.cs" Inherits="Food_Suggestion.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	
+    <title></title>
+    <link href="design/banner.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">	
+    </asp:ContentPlaceHolder>
+	
+</head>
+<body>
+    <header id = "head1"> 	
+		<div class = "nav-container">
+			<nav class = "navbar">
+                <img src="design/banner.jpg", width = "130", height = "80"/>
+				<p id = "p1"> Food Suggestion </p>
+				<ul class = "nav-menu">
+					<li class = "nav-link">
+						<a class="nav-a" href="home.aspx">Home</a>
+					</li> 
+					<li class="nav-link">
+						<a class="nav-a" href="/">About</a>
+					</li>
+					<li class = "nav-link">
+						<a class="nav-a" href="login.aspx">Login</a>
+					</li>
+				</ul> 
+			</nav>
+		</div>
+	</header>
+
+	<div>
+		<asp:ContentPlaceHolder ID="body" runat="server">
+		</asp:ContentPlaceHolder>
+	</div>
+       
+</body>
+</html>
